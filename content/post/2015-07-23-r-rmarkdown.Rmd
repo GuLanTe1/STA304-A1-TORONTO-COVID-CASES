@@ -11,6 +11,21 @@ bibliography: 'references.bib'
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+install.packages("opendatatoronto")
+install.packages("tidyverse")
+library(opendatatoronto)
+library(tidyverse)
+library(dplyr)
+```
+
+```{r}
+toronto_covid_packages <- search_packages("COVID")
+toronto_covid_resources <- toronto_covid_packages %>% list_package_resources()
+toronto_covid_statistics <- toronto_covid_resources %>% get_resource()
+
+```
 #Part.i Abstract
 test 
 Used @citetidyverse
@@ -18,22 +33,25 @@ Used @citetidyverse
 #Part.ii Introduction 
 
 #Part.iii Data Introduction
+
+```{r}
+glimpse(toronto_covid_statistics)
+```
+
 The scenario and study objective.
 Types of Variables
 
 #Part.iv Including Plots
 
-You can also embed plots. See Figure \@ref(fig:pie) for example:
-
-```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
-par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c('Sky', 'Sunny side of pyramid', 'Shady side of pyramid'),
-  col = c('#0292D8', '#F7EA39', '#C4B632'),
-  init.angle = -50, border = NA
-)
+```{r}
+ggplot(data = toronto_covid_statistics) +  aes (x = toronto_covid_statistics$`Age Group`) + geom_bar(color = "black",fill = "skyblue2") + labs(x = 'Age Group', y = 'Case Count', title = 'Totonto COVID-19 Case in All Age Groups')
 ```
+
+```{r}
+ggplot(data = toronto_covid_statistics) +  aes (x = toronto_covid_statistics$`Client Gender`) + geom_bar(color = "black",fill = "skyblue2")  + labs(x = 'Case Gender', y = 'Case Count', title = 'COVID-19 Cases with Different Gender') 
+```
+
+
 
 # Reference
 
