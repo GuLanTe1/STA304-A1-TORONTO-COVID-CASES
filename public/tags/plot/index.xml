@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plot on Toronto COVID-19 Cases Study</title>
+    <link>/tags/plot/</link>
+    <description>Recent content in plot on Toronto COVID-19 Cases Study</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/plot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Toronto COVID-19 Cases Study</title>
+      <link>/2020/09/24/toronto-covid-19-cases-study/</link>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/09/24/toronto-covid-19-cases-study/</guid>
+      <description>#Part.i Abstract
+Used Wickham et al. (2019)
+#Part.ii Introduction
+#Part.iii Data Introduction The scenario and study objective. Types of Variables
+#Part.iv Including Plots
+You can also embed plots. See Figure 1 for example:
+par(mar = c(0, 1, 0, 1)) pie( c(280, 60, 20), c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;), col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;), init.angle = -50, border = NA )  Figure 1: A fancy pie chart.</description>
+    </item>
+    
+  </channel>
+</rss>
