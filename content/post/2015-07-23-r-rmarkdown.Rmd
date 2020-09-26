@@ -95,7 +95,7 @@ ggplot(data = toronto_covid_statistics) +  aes (x = toronto_covid_statistics$`Ep
 #Part.v Limitations 
   1. The data is not up-to-date with the current infection situation since Toronto Public Health updates the data regularly.
   2. The infection sources are not specific enough, especially we can hardly get more infection information about the 'outbreak-associated'. 
-  3. People with mild symptoms may not report themselves to Public Health since the case report is not mandatory (non-mandatory policy intervention), thus infection date can not represent the true situation that we facing right now. 
+  3. People with mild symptoms may not report themselves to Public Health since the case report is not mandatory (non-mandatory policy intervention); thus infection date can not represent the true situation that we are facing right now. 
   
 #Part.vi Reference
 
