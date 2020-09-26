@@ -29,7 +29,7 @@ toronto_covid_statistics <- toronto_covid_resources %>% get_resource()
 #Part.i Abstract
 
   I used bar plots to visualize the Toronto COVID-19 data offered by Toronto Public Health. The observation were adult between age 19 and 69 was a primarily infected group by the COVID-19, and the case report shows clear evidence that COVID-19 cases, again, are rising fast. As data suggests, we need to prepare another incoming outbreak.
-  Tools and data used @citetidyverse, @citeopendatatoronto
+  Tools and data used @citetidyverse, @citeopendatatoronto, and@citedplyr
 
 #Part.ii Introduction 
 
